@@ -1,34 +1,33 @@
 .gallery {
     max-width: 600px;
     margin: 0 auto;
-  }
-  
-  .main-image {
-    margin-bottom: 1rem;
-  }
-  
-  .main-image img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-  }
-  
-  .thumbnails {
     display: flex;
+    align-items: flex-start;
     gap: 10px;
-    justify-content: center;
-  }
-  
-  .thumb {
-    width: 100px;
-    height: 100px;
+}
+
+.thumbnails {
+    display: flex;
+    flex-direction: column; 
+    gap: 10px;
+}
+
+.thumb {
+    width: 80px;
+    height: 80px;
     object-fit: cover;
     border-radius: 3px;
     cursor: pointer;
     transition: transform 0.3s, box-shadow 0.3s;
-  }
-  
-  .thumb:hover {
+}
+
+.thumb:hover {
     transform: scale(1.05);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  }
+}
+
+.main-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
