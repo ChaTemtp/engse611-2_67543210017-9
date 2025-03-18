@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    
+    <div class="todo-container">
+        <h2>My To-Do List</h2>
+        
+        <div class="todo-input">
+          <input type="text" id="taskInput" placeholder="เพิ่มรายการ...">
+          
+          <!-- Drop-down for task type -->
+          <select id="taskType">
+            <option value="work">WORK</option>
+            <option value="personal">SPIDERMAN</option>
+            <option value="nothing">FATCAT</option>
+            
+          </select>
+          
+          <button id="addTask">ADD</button>
+        </div>
+        
+        <ul id="taskList">
+          <!-- รายการจะถูกเพิ่มที่นี่ -->
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
